@@ -16,6 +16,7 @@
     "dva": "^1.2.1",
     "mockjs": "^1.0.1-beta3",
     "postcss-pxtorem": "^4.0.1",
+    "rc-form": "^1.4.6",
     "react": "^15.4.0",
     "react-dom": "^15.4.0"
   },

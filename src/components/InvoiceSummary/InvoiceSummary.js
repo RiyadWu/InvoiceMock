@@ -10,7 +10,7 @@ function InvoiceSummary({ dispatch, summary }) {
       <Card>
         <Card.Body>
           <List>
-            <InputItem value={summary.orderId}>订单号</InputItem>
+            <InputItem value={summary.orderId} >订单号</InputItem>
             <InputItem value={summary.group}>经销商</InputItem>
             <InputItem value={summary.tradeDate}>交易日期</InputItem>
             <InputItem value={summary.tradeAmount}>订单金额</InputItem>
