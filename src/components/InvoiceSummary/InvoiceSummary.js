@@ -14,16 +14,16 @@ function InvoiceSummary({ dispatch, data }) {
     <div className={styles.normal}>
       <Card className={ styles.card }>
         <Card.Body>
-          <List>
-            <InputItem value={data.orderId} >订单号</InputItem>
-            <InputItem value={data.group} >经销商</InputItem>
-            <InputItem value={data.tradeDate} >交易日期</InputItem>
-            <InputItem value={data.tradeAmount} >订单金额</InputItem>
+          <List id="#you-list">
+            <InputItem value={data.orderId} className="you-input-label">订单号</InputItem>
+            <InputItem value={data.group} className="you-input-label">经销商</InputItem>
+            <InputItem value={data.tradeDate} className="you-input-label">交易日期</InputItem>
+            <InputItem value={data.tradeAmount}>订单金额</InputItem>
           </List>
         </Card.Body>
       </Card>
 
-      <Button className="btn" type="primary" onClick={fetchData}>确认</Button>
+      <Button className="btn you-btn" type="primary" onClick={fetchData}>确认</Button>
     </div>
   );
 }

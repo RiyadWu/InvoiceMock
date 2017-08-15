@@ -3,9 +3,3 @@ html, body, :global(#root) {
   height: 100%;
 }
 
-.am-button-primary {
-  background-color: #FC7C19!important;
-}
-.am-list-item .am-input-label {
-  color: #FC7C19!important;
-}
