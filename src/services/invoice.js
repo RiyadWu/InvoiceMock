@@ -1,6 +1,6 @@
 import request from '../utils/request';
 
-export function summary() {
+export function fetch() {
   return request('/summary', {
     method:'GET',
     mode:'cors',// 避免cors攻击

@@ -1,3 +1,28 @@
 
 .normal {
+  height: 100%;
+}
+
+.logo {
+  height: 310px;
+  background: url(../assets/logo.png) no-repeat center 0;
+  background-size: 400px 400px;
+}
+
+.title {
+  text-align: center;
+  bottom: 30px;
+  font-size: 40px;
+  font-weight: bold;
+  color: gray;
+  margin-bottom: 50px;
+}
+
+.hint {
+  position: absolute;
+  bottom: 20px;
+  text-align: center;
+  font-size: 26px;
+  color: gray;
+  width: 100%;
 }

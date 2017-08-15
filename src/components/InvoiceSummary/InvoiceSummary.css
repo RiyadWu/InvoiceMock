@@ -1,3 +1,19 @@
 
 .normal {
+  margin: 20px 20px;
+}
+
+.card {
+  margin-bottom: 50px;
+}
+
+.input {
+  background-color: #FC7C19;
+}
+.am-button-primary {
+  background-color: #FC7C19!important;
+}
+
+.btn-confirm {
+  background-color: #FC7C19 !important;
 }
