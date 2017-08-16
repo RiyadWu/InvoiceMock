@@ -1,7 +1,11 @@
 import * as invoiceService from '../services/invoice';
 
+const sumAmount = function (arr) {
+  return arr.reduce((pre, cur) => pre + cur.amount, 0)
+}
+
 export default {
-  namespace: 'invoiceSummary',
+  namespace: 'invoiceInput',
   state: {
     data: {},
     msg: null,
@@ -12,19 +16,20 @@ export default {
       if (code !== 50) {
         return { ...state };
       }
-      return { ...state, data, msg, code };
+      const sum = sumAmount(data)
+      return { ...state, data, msg, code, sum };
     },
   },
   effects: {
     *fetch({ }, { call, put }) {
-      const  data  = yield call(invoiceService.fetch);
+      const  data  = yield call(invoiceService.details);
       yield put({ type: 'querySuccess', payload: data  });
     },
   },
   subscriptions: {
     setup({ dispatch, history }) {
       return history.listen(({ pathname }) => {
-        if (pathname === '/') {
+        if (pathname === '/invoiceInput') {
           dispatch({ type: 'fetch'});
         }
       });

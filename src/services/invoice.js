@@ -8,5 +8,13 @@ export function fetch() {
   });
 }
 
+export function details() {
+  return request('/detail', {
+    method:'GET',
+    mode:'cors',// 避免cors攻击
+    credentials: 'include'
+  });
+}
+
 
 

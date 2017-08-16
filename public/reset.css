@@ -1,7 +1,6 @@
 .you-btn {
   background-color: #FC7C19 !important;
 }
-
-#you-list .you-input-label .am-input-label{
+.am-list-item.you-input-label .am-input-label {
   color: #FC7C19 !important;
 }
